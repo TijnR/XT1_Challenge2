@@ -1,0 +1,29 @@
+@mixin screen-mobile-and-smaller {
+  @media only screen and (max-width: $breakpoint-mobile) {
+    @content;
+  }
+}
+
+@mixin screen-mobile-plus-and-smaller {
+  @media only screen and (max-width: $breakpoint-mobile-plus) {
+    @content;
+  }
+}
+
+@mixin screen-tablet-portrait-and-smaller {
+  @media only screen and (max-width: $breakpoint-tablet-portrait) {
+    @content;
+  }
+}
+
+@mixin screen-tablet-landscape-and-smaller {
+  @media only screen and (max-width: $breakpoint-tablet-landscape) {
+    @content;
+  }
+}
+
+@mixin screen-laptop-and-smaller {
+  @media only screen and (max-width: $breakpoint-laptop) {
+    @content;
+  }
+}

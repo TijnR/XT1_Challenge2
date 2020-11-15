@@ -1,0 +1,19 @@
+.u-text-clamp {
+  @include text-clamp(2);
+
+  &--4 {
+    -webkit-line-clamp: 4; /* number of lines to show */
+  }
+
+  &--3 {
+    -webkit-line-clamp: 3; /* number of lines to show */
+  }
+
+  &--2 {
+    -webkit-line-clamp: 2; /* number of lines to show */
+  }
+
+  &--1 {
+    -webkit-line-clamp: 1; /* number of lines to show */
+  }
+}

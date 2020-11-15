@@ -1,0 +1,129 @@
+.section {
+  width: 100%; }
+
+.section__content {
+  max-width: 1440px;
+  padding: 0 60px;
+  margin: 0 auto; }
+  @media only screen and (max-width: 1024px) {
+    .section__content {
+      padding: 0 40px; } }
+  @media only screen and (max-width: 480px) {
+    .section__content {
+      padding: 0 20px; } }
+
+@font-face {
+  font-family: "Traffic";
+  font-weight: 400;
+  src: url("/assets/fonts/Traffic-05.ttf.woff") format("woff"); }
+
+@font-face {
+  font-family: "Helvetica";
+  font-weight: 400;
+  src: url("/assets/fonts/Helvetica.ttf") format("ttf"); }
+
+@font-face {
+  font-family: "Helvetica";
+  font-weight: 600;
+  src: url("/assets/fonts/Helvetica-Bold.ttf") format("ttf"); }
+
+@font-face {
+  font-family: "Helvetica";
+  font-weight: 200;
+  src: url("/assets/fonts/Helvetica-light.ttf") format("ttf"); }
+
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-width: 320px;
+  min-height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto; }
+
+html {
+  background-color: #ffffff;
+  min-height: 100%;
+  font-size: 10px;
+  font-family: Helvetica; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+*:focus {
+  outline: none; }
+
+html,
+body,
+button,
+a,
+input {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+body {
+  min-height: 100%;
+  overflow-y: scroll;
+  margin: 0; }
+
+svg {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  max-height: 100%; }
+
+body,
+html {
+  width: 100%; }
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0; }
+
+h1 {
+  font-size: 8rem;
+  font-family: Traffic;
+  line-height: 1.2; }
+
+h2 {
+  font-size: 6rem;
+  font-family: Helvetica;
+  font-weight: 600;
+  line-height: 1.2; }
+
+.u-text-clamp {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* number of lines to show */
+  -webkit-box-orient: vertical; }
+  .u-text-clamp--4 {
+    -webkit-line-clamp: 4;
+    /* number of lines to show */ }
+  .u-text-clamp--3 {
+    -webkit-line-clamp: 3;
+    /* number of lines to show */ }
+  .u-text-clamp--2 {
+    -webkit-line-clamp: 2;
+    /* number of lines to show */ }
+  .u-text-clamp--1 {
+    -webkit-line-clamp: 1;
+    /* number of lines to show */ }
+
+h2 {
+  font-family: Helvetica; }
