@@ -1,0 +1,7 @@
+p {
+  font-size: $font-size-lg;
+
+  @include screen-mobile-plus-and-smaller {
+    font-size: $font-size-md;
+  }
+}

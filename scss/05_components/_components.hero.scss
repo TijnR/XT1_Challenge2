@@ -1,0 +1,24 @@
+.c-hero {
+  /* The image used */
+  background-image: url("/assets/images/food_delivery.jpg");
+
+  /* Full height */
+  height: 100vh;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding-top: 100px;
+}
+
+.hero__title {
+  max-width: 500px;
+  color: $color-white;
+}
+
+.hero__text {
+  color: $color-white;
+  max-width: 650px;
+}
