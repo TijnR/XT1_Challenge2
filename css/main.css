@@ -118,7 +118,11 @@ h6 {
 h1 {
   font-size: 8rem;
   font-family: Traffic;
-  line-height: 1.2; }
+  line-height: 1;
+  letter-spacing: 10px; }
+  @media only screen and (max-width: 480px) {
+    h1 {
+      font-size: 4rem; } }
 
 h2 {
   font-size: 6rem;
@@ -134,6 +138,12 @@ a {
   font-weight: 600;
   text-decoration: none;
   color: #251931; }
+
+p {
+  font-size: 2rem; }
+  @media only screen and (max-width: 480px) {
+    p {
+      font-size: 1.8rem; } }
 
 .u-text-clamp {
   overflow: hidden;
@@ -280,6 +290,25 @@ a {
   background-color: #251931; }
   .nav__hamburger-line--middle {
     margin: 5px 0; }
+
+.c-hero {
+  /* The image used */
+  background-image: url("/assets/images/food_delivery.jpg");
+  /* Full height */
+  height: 100vh;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 100px; }
+
+.hero__title {
+  max-width: 500px;
+  color: #ffffff; }
+
+.hero__text {
+  color: #ffffff;
+  max-width: 650px; }
 
 h2 {
   font-family: Helvetica; }

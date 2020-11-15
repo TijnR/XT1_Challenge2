@@ -1,7 +1,12 @@
 h1 {
   font-size: $font-size-h1;
   font-family: Traffic;
-  line-height: 1.2;
+  line-height: 1;
+  letter-spacing: 10px;
+
+  @include screen-mobile-plus-and-smaller {
+    font-size: $font-size-h1-mobile;
+  }
 }
 
 h2 {
