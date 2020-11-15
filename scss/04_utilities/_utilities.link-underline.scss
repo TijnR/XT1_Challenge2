@@ -1,0 +1,25 @@
+.u-link-underline {
+  display: inline-block;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scale3d(0, 1, 1);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $color-primary;
+    transform-origin: bottom right;
+    transition: 300ms ease-in-out;
+    transition-property: transform;
+  }
+
+  &:hover {
+    &::before {
+      transform: scale3d(1, 1, 1);
+      transform-origin: bottom left;
+    }
+  }
+}
