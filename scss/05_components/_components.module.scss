@@ -1,0 +1,159 @@
+.c-module {
+  position: relative;
+  display: inherit;
+  margin-top: 50px;
+}
+
+.module__container {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0 16px 16px 16px;
+  max-width: 100%;
+  display: flex;
+  padding: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  @include screen-tablet-portrait-and-smaller {
+    flex-direction: column;
+    border-radius: 0 0 16px 16px;
+  }
+}
+
+.module__text {
+  margin-bottom: 20px;
+}
+
+.module__starter-info {
+  width: 33%;
+}
+
+.module__check {
+  width: 40%;
+  margin-left: 50px;
+}
+
+.module__inputs-container {
+  display: flex;
+
+  @include screen-mobile-and-smaller {
+    flex-direction: column;
+  }
+}
+
+.module__check-input {
+  width: 200px;
+
+  @include screen-mobile-and-smaller {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+
+.module__check-input {
+  margin-right: 5px;
+}
+
+.module__title,
+.module__output-text {
+  text-transform: uppercase;
+}
+
+.module__output {
+  width: 20%;
+  @include flex-center();
+  text-align: center;
+  flex-direction: column;
+  margin-left: 50px;
+}
+.module__output-text {
+  font-size: $font-size-h5;
+  color: $color-primary;
+  margin-bottom: 10px;
+}
+
+.module__icon-container {
+  width: 40px;
+  height: 40px;
+
+  path {
+    fill: $color-primary;
+  }
+}
+
+.module__starter-info,
+.module__check,
+.module__output {
+  @include screen-tablet-portrait-and-smaller {
+    margin: 0;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+}
+
+.module__title,
+.module__text {
+  max-width: 500px;
+}
+
+.module__select-box {
+  display: flex;
+
+  @include screen-tablet-portrait-and-smaller {
+    justify-content: space-evenly;
+  }
+}
+
+.module__select-option {
+  margin: 0;
+  font-weight: $font-weight-regular;
+  text-transform: capitalize;
+  cursor: pointer;
+
+  &--left {
+    border-radius: 16px 0 0 0;
+  }
+
+  &--middle {
+    border-radius: 0 0 0 0;
+  }
+
+  &--right {
+    border-radius: 0 16px 0 0;
+  }
+
+  &.active--option {
+    pointer-events: none;
+    background-color: $color-white;
+    color: $color-black;
+    font-weight: $font-weight-bold;
+  }
+
+  @include screen-tablet-portrait-and-smaller {
+    width: 34%;
+  }
+}
+
+.module__select-option-label {
+  @include screen-tablet-portrait-and-smaller {
+    display: none;
+  }
+}
+
+.module__select-icon {
+  width: 40px;
+  height: 40px;
+  display: none;
+
+  path {
+    fill: $color-white;
+  }
+
+  .active--option & {
+    path {
+      fill: $color-primary;
+    }
+  }
+
+  @include screen-tablet-portrait-and-smaller {
+    display: inline-block;
+  }
+}
