@@ -1,0 +1,32 @@
+.c-overview {
+  margin-top: 50px;
+}
+
+.overview__title {
+  color: $color-grey;
+  display: flex;
+
+  &--underline {
+    content: "hallo";
+    min-height: 2px;
+    max-width: 700px;
+    background-color: $color-grey;
+  }
+}
+
+.overview__grid {
+  margin: 100px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+
+  @include screen-tablet-landscape-and-smaller{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include screen-tablet-portrait-and-smaller {
+    grid-template-columns: 1fr;
+
+  }
+}
