@@ -220,6 +220,7 @@ input {
 
 .c-nav {
   background-color: #ffffff;
+  opacity: 0.9;
   position: fixed;
   top: 0;
   z-index: 3; }
@@ -340,15 +341,30 @@ input {
 .hero__title {
   max-width: 500px;
   color: #ffffff; }
+  @media only screen and (max-width: 480px) {
+    .hero__title {
+      line-height: 1.4;
+      margin-bottom: 20px; } }
 
 .hero__text {
   color: #ffffff;
   max-width: 650px; }
+  @media only screen and (max-width: 480px) {
+    .hero__text {
+      width: 80%;
+      font-size: 2.2rem; } }
 
 .c-module {
   position: relative;
   display: inherit;
-  margin-top: 50px; }
+  margin-top: -250px;
+  margin-bottom: 100px; }
+  @media only screen and (max-width: 1024px) {
+    .c-module {
+      margin-top: -150px; } }
+  @media only screen and (max-width: 480px) {
+    .c-module {
+      margin-top: -250px; } }
 
 .module__container {
   background-color: rgba(255, 255, 255, 0.8);

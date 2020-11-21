@@ -1,7 +1,16 @@
 .c-module {
   position: relative;
   display: inherit;
-  margin-top: 50px;
+  margin-top: -250px;
+  margin-bottom: 100px;
+
+  @include screen-tablet-landscape-and-smaller {
+    margin-top: -150px;
+  }
+
+  @include screen-mobile-plus-and-smaller{
+    margin-top: -250px;
+  }
 }
 
 .module__container {
