@@ -595,5 +595,56 @@ input {
   color: #65aaf8;
   font-weight: 600; }
 
+.c-footer {
+  background-color: #656565; }
+
+.footer__container {
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px; }
+  @media only screen and (max-width: 768px) {
+    .footer__container {
+      grid-template-columns: 1fr;
+      padding: 30px 0; } }
+
+.footer__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; }
+  .footer__section:nth-child(2) {
+    padding-right: 20px; }
+  @media only screen and (max-width: 768px) {
+    .footer__section {
+      margin-bottom: 50px; }
+      .footer__section:nth-child(2) {
+        padding-right: 0px; } }
+
+.footer__title {
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px; }
+
+.footer__link {
+  cursor: pointer; }
+  .footer__link:hover {
+    opacity: 0.8; }
+
+.footer__label, .footer__link {
+  font-size: 1.8rem;
+  color: #ffffff;
+  font-weight: 400;
+  margin-bottom: 2px; }
+
+.footer__copyright-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center; }
+
+.footer__copyright {
+  margin: 25px auto;
+  color: #ffffff; }
+
 h2 {
   font-family: Helvetica; }
