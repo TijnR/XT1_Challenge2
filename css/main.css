@@ -500,10 +500,12 @@ input {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 16px;
   overflow: hidden; }
+  @media only screen and (max-width: 768px) {
+    .c-product {
+      grid-template-areas: " img img" " product price" " calc calc"; } }
 
 .product__image-container {
   grid-area: img;
-  background-image: url("/assets/images/brood.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -514,6 +516,11 @@ input {
   display: flex;
   padding: 15px 20px;
   justify-content: space-between; }
+  @media only screen and (max-width: 768px) {
+    .product__calculator {
+      position: relative;
+      background-color: #ffffff;
+      padding-top: 0; } }
 
 .product__product {
   grid-area: product;
@@ -529,11 +536,18 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
+  @media only screen and (max-width: 768px) {
+    .product__calculator-buttons {
+      flex-direction: row;
+      max-width: 150px;
+      width: 100%;
+      margin: 0 auto; } }
 
 .product__calculator-button {
   width: 30px;
   height: 30px;
   background-color: #ffffff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 50%;
   position: relative;
   display: flex;
@@ -556,6 +570,15 @@ input {
   display: flex;
   align-items: center;
   justify-content: center; }
+  @media only screen and (max-width: 768px) {
+    .product__calculator-total-number-container {
+      position: absolute;
+      left: 0;
+      right: 0;
+      max-width: 100px;
+      width: 100%;
+      margin: 0 auto;
+      bottom: 12px; } }
 
 .product__calculator-total-number {
   font-size: 3.2rem; }

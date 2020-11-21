@@ -9,11 +9,18 @@
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 16px;
   overflow: hidden;
+
+  @include screen-tablet-portrait-and-smaller {
+
+    grid-template-areas:
+    " img img"
+    " product price"
+    " calc calc";
+  }
 }
 
 .product__image-container {
   grid-area: img;
-  background-image: url("/assets/images/brood.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,6 +32,12 @@
   display: flex;
   padding: 15px 20px;
   justify-content: space-between;
+
+  @include screen-tablet-portrait-and-smaller{
+    position: relative;
+    background-color: $color-white;
+    padding-top: 0;
+  }
 }
 
 .product__product {
@@ -42,12 +55,20 @@
   flex-direction: column;
   justify-content: space-between;
 
+  @include screen-tablet-portrait-and-smaller{
+    flex-direction: row;
+    max-width: 150px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
 }
 
 .product__calculator-button {
   width: 30px;
   height: 30px;
   background-color: $color-white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 50%;
   position: relative;
   @include flex-center;
@@ -76,6 +97,15 @@
 .product__calculator-total-number-container{
   @include flex-center;
 
+  @include screen-tablet-portrait-and-smaller{
+    position: absolute;
+    left: 0; 
+    right: 0;
+    max-width: 100px;
+    width: 100%;
+    margin: 0 auto;
+    bottom: 12px;
+  }
 }
 
 .product__calculator-total-number{
