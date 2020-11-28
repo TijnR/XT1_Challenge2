@@ -15,8 +15,8 @@
 @font-face {
   font-family: "Traffic";
   font-weight: 400;
-  src: url("../assets/fonts/Traffic-05.ttf.woff");
-  src: url("../assets/fonts/Traffic-05.ttf.woff") format("embedded-opentype"), url("../assets/fonts/Traffic-05.ttf.woff") format("woff2"), url("../assets/fonts/Traffic-05.ttf.woff") format("woff"), url("../assets/fonts/Traffic-05.ttf.woff") format("truetype"), url("../assets/fonts/Traffic-05.ttf.woff") format("svg"); }
+  src: url("../assets/fonts/Traffic.ttf");
+  src: url("../assets/fonts/Traffic.ttf") format("embedded-opentype"), url("../assets/fonts/Traffic.woff") format("woff2"), url("../assets/fonts/Traffic.woff") format("woff"), url("../assets/fonts/Traffic.ttf") format("truetype"), url("../assets/fonts/Traffic.ttf") format("svg"); }
 
 @font-face {
   font-family: "Helvetica";
