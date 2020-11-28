@@ -2,12 +2,24 @@
   font-family: "Traffic";
   font-weight: $font-weight-regular;
   src: url("../assets/fonts/Traffic-05.ttf.woff");
+
+  src: url("../assets/fonts/Traffic-05.ttf.woff") format("embedded-opentype"),
+    url("../assets/fonts/Traffic-05.ttf.woff") format("woff2"),
+    url("../assets/fonts/Traffic-05.ttf.woff") format("woff"),
+    url("../assets/fonts/Traffic-05.ttf.woff") format("truetype"),
+    url("../assets/fonts/Traffic-05.ttf.woff") format("svg");
 }
 
 @font-face {
   font-family: "Helvetica";
   font-weight: $font-weight-regular;
   src: url("../assets/fonts/Helvetica.ttf");
+
+  src: url("../assets/fonts/Helvetica.ttf") format("embedded-opentype"),
+    url("../assets/fonts/Helvetica.ttf") format("woff2"),
+    url("../assets/fonts/Helvetica.ttf") format("woff"),
+    url("../assets/fonts/Helvetica.ttf") format("truetype"),
+    url("../assets/fonts/Helvetica.ttf") format("svg");
 }
 
 @font-face {
