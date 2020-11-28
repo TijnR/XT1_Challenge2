@@ -329,7 +329,7 @@ input {
 
 .c-hero {
   /* The image used */
-  background-image: url("/assets/images/food_delivery.jpg");
+  background-image: url("../assets/images/food_delivery.jpg");
   /* Full height */
   height: 100vh;
   /* Center and scale the image nicely */
